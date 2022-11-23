@@ -11,16 +11,10 @@ int b = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число c, не равное a и b: ");
 int c = Convert.ToInt32(Console.ReadLine());
 
-if (a > b) 
-{
-   if (a > c) Console.Write(a); 
-}
-   else       
-   Console.Write(c);
-else
-   if (b > c)   
-{
-                Console.Write(c);    
-}  
-   else Console.Write(c);
+if (a > b)
+  if (a > c) Console.WriteLine(a);
+  else Console.WriteLine(c);
+else 
+    if (b > c) Console.WriteLine(b);
+    else Console.WriteLine(c);
 
